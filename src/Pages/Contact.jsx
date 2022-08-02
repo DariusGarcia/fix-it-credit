@@ -1,16 +1,30 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
-
+import logo from '../Assets/Images/black-logo.png'
 export default function Contact() {
 	return (
 		<>
 			<NavBar />
 			<span className='flex justify-center flex-col mt-32 w-full text-start md:text-center px-4 md:mb-12 md:mt-40'>
-				<p className='text-lg md:text-xl'>{Text()}</p>
+				{/* <p className='text-lg md:text-xl'>{Text()}</p> */}
+				Have a question? Drop a message and a representative will get back to
+				you shortly.
 			</span>
 			<div className='flex justify-center mt-10 mb-12 md:my-12'>
 				<div className='md:flex md:flex-row justify-center '>
+					<article className='h-96 md:h-full bg-primary mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl md:w-96 flex rounded-lg items-center justify-center md:justify-start md:pb-0 '>
+						<div className='flex md:w-full flex-col py-4  text-white  rounded-lg justify-center items-center h-full bg-blue'>
+							<h1 className='my-2 text-2xl'>Contact Us</h1>
+
+							<p className='my-2'>Phone: (626) 922 - 0791</p>
+							<p className='my-2'>Email: info@kvlcommunications.com</p>
+							<img
+								src={logo}
+								alt='logo'
+								className='py-2 my-6 bg-white rounded-lg w-56'></img>
+						</div>
+					</article>
 					<article className='flex md:justify-end justify-center md:w-1/2  '>
 						<div className='flex items-end justify-center md:justify-end w-screen md:w-full'>
 							<form
@@ -55,18 +69,6 @@ export default function Contact() {
 									/>
 								</div>
 							</form>
-						</div>
-					</article>
-					<article className='h-96 md:h-full bg-primary mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl md:w-96 flex rounded-lg items-center justify-center md:justify-start md:pb-0 '>
-						<div className='flex md:w-full flex-col py-4  text-white  rounded-lg justify-center items-center h-full bg-blue'>
-							<h1 className='my-2 text-2xl'>Contact Us</h1>
-
-							<p className='my-2'>Phone: (626) 922 - 0791</p>
-							<p className='my-2'>Email: info@kvlcommunications.com</p>
-							<img
-								// src={logo}
-								alt='logo'
-								className='py-2 my-6 bg-white rounded-lg h-32'></img>
 						</div>
 					</article>
 				</div>
