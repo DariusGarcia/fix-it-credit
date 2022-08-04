@@ -18,7 +18,7 @@ export default function Contact() {
 							<h1 className='my-2 text-2xl'>Contact Us</h1>
 
 							<p className='my-2'>Phone: (626) 922 - 0791</p>
-							<p className='my-2'>Email: info@kvlcommunications.com</p>
+							<p className='my-2'>Email: info@fixitcredit.com</p>
 							<img
 								src={logo}
 								alt='logo'

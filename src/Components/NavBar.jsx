@@ -13,9 +13,9 @@ export default function NavBar() {
 
 	return (
 		<>
-			<nav className='flex sticky top-0 items-center top-0 justify-around md:justify-center h-28 w-full p-5 bg-white text-sm md:text-base z-50 rounded-b-xl'>
+			<nav className='flex sticky top-0 items-center justify-around md:justify-center h-28 w-full p-5 bg-white text-sm md:text-base rounded-b-xl'>
 				<div className='flex flex-row justify-center text-center '>
-					<ul className='flex items-end justify-center gap-5 place-content-end cursor-pointer text-grey3'>
+					<ul className='flex items-end justify-center gap-2 place-content-end cursor-pointer text-grey3'>
 						{/* <li
 							className=' hover:border-b-2 border-primary'
 							onClick={() =>
@@ -28,7 +28,7 @@ export default function NavBar() {
 							<MdHome size={25}></MdHome>{' '}
 						</li> */}
 						<li
-							className='w-max md:inline-block  '
+							className='w-max md:inline-block md:mr-4  '
 							onClick={() =>
 								animateScroll.scrollToTop({
 									duration: 400,
@@ -39,7 +39,7 @@ export default function NavBar() {
 							<Link to='/'>
 								<img
 									src={logo}
-									className='h-8 md:h-20 rounded-sm md:mr-36 '
+									className='h-8 md:h-20 rounded-sm '
 									alt='logo'></img>
 							</Link>
 						</li>
