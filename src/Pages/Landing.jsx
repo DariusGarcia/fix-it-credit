@@ -2,6 +2,7 @@ import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 
 import logo from '../Assets/Images/black-logo.png'
+import MessageBtn from '../Components/MessageBtn'
 
 import React from 'react'
 
@@ -9,7 +10,7 @@ const Landing = () => {
 	return (
 		<div>
 			<NavBar />
-			<div className='relative flex flex-col justify-center items-center md:h-full w-full bg-neutral md:pt-24 md:mb-48'>
+			<div className='relative flex flex-col justify-center items-center md:h-full w-full bg-white md:pt-24 md:mb-48 .'>
 				<section className='px-4 flex flex-col justify-center md:gap-16 md:flex-row'>
 					<article className='flex flex-col order-last md:order-first justify-around md:min-w-96 md:w-1/2 lg:w-1/3 mb-16 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
 						<header className=''>
@@ -41,7 +42,7 @@ const Landing = () => {
 					</article>
 				</section>
 			</div>
-			
+			<MessageBtn />
 			<Footer />
 		</div>
 	)

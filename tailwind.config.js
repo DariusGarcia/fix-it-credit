@@ -11,15 +11,20 @@ module.exports = {
 			lightGrey: '#f1f5f9',
 			greybtn: '#d1d5db',
 			grey3: '#4b5563',
-			primary: '#1e40af',
+			primary: '#004999',
 			bluetext: '#3b82f6',
 			red: '#dc2626',
 			tmobile: '#E20074',
 			att: '#00a8e0',
 			spectrum: '#003057',
 			neutral: '#fafafa',
+			zinc: '#f1f1f1',
 		},
-		extend: {},
+		extend: {
+			backgroundImage: {
+				'curve-bg': "url('Assets/Images/smooth.jpg')",
+			},
+		},
 	},
 	plugins: [
 		plugin(function ({ addVariant, e, postcss }) {

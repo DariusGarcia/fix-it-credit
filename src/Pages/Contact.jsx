@@ -6,7 +6,7 @@ export default function Contact() {
 	return (
 		<>
 			<NavBar />
-			<span className='flex justify-center flex-col mt-32 w-full text-start md:text-center px-4 md:mb-12 md:mt-40'>
+			<span className='flex justify-center flex-col md:mt-12 w-full text-start md:text-center px-4 md:mb-12'>
 				{/* <p className='text-lg md:text-xl'>{Text()}</p> */}
 				Have a question? Drop a message and a representative will get back to
 				you shortly.
@@ -73,7 +73,7 @@ export default function Contact() {
 					</article>
 				</div>
 			</div>
-			<div className='md:mt-24'>
+			<div className=''>
 				<Footer />
 			</div>
 		</>
