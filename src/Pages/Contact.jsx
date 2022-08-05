@@ -9,9 +9,9 @@ export default function Contact() {
 		<>
 			<NavBar />
 
-			<div className='flex justify-center  mb-12  font-inter'>
-				<div className='md:flex md:flex-col justify-center '>
-					<article className='flex flex-col w-screen h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
+			<div className='flex justify-center mb-12  font-inter'>
+				<div className='md:flex md:flex-col w-full justify-center '>
+					<article className='flex  flex-col  h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 mt-4  md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
 						<div className='flex md:w-full flex-col py-4 h-full text-white  rounded-lg justify-center items-center bg-blue'>
 							<h1 className='flex flex-row  items-center gap-4 my-2 text-2xl md:text-6xl font-DMSans'>
 								Get in touch <MdMessage size={40}></MdMessage>
@@ -26,7 +26,7 @@ export default function Contact() {
 						</div>
 					</article>
 					<article className='flex  justify-center   '>
-						<div className='flex flex-col  justify-center  mt-8 md:mt-0 w-screen md:w-3/5'>
+						<div className='flex flex-col  justify-center  mt-8 md:mt-0 w-full md:w-3/5'>
 							<span className='flex justify-center flex-col md:mt-12 mb-10 w-full text-black text-lg md:text-xl text-start md:text-center px-4 md:mb-12'>
 								{/* <p className='text-lg md:text-xl'>{Text()}</p> */}
 								Have a question? Drop a message and a representative will get

@@ -28,6 +28,7 @@ module.exports = {
 			gradBlue: '#004999',
 			gradBlue2: '#009dff',
 			slate: '#111827',
+			grey2: 'f5f6f6',
 		},
 		extend: {
 			backgroundImage: {
