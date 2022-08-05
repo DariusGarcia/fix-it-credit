@@ -1,5 +1,6 @@
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom'
 
 import logo from '../Assets/Images/black-logo.png'
 import MessageBtn from '../Components/MessageBtn'
@@ -14,7 +15,7 @@ const Landing = () => {
 				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center'>
 					<article
 						className='flex flex-col lg:w-1/3 justify-center
-					 mb-12  order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
+					 mb-12  order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg md:rounded-lg '>
 						<header className=''>
 							<h1 className='text-white text-4xl font-semibold font-Inter'>
 								Better credit, <span className='italic'>easier.</span>
@@ -28,13 +29,15 @@ const Landing = () => {
 								nulla pariatur.
 							</p>
 						</header>
-						<span className='flex justify-center'>
+						<span className='flex justify-center mb-8  w-full'>
 							{' '}
-							<a
-								href='/about'
-								className=' bg-greybtn p-2 md:w-3/5 w-full mb-6 rounded-md text-xl font-semibold font-Roboto tracking-wider hover:bg-primary hover:text-white shadow-md hover:shadow-lg hover:scale-95 outline-grey transition ease-in-out delay-10'>
-								Learn More
-							</a>
+							<Link to='/about'>
+								<a
+									href='/about'
+									className=' bg-greybtn p-4 px-12 mb-6 rounded-md text-xl font-semibold font-Roboto tracking-wider hover:bg-primary hover:text-white shadow-md hover:shadow-lg hover:scale-95 outline-grey transition ease-in-out delay-10'>
+									Learn More
+								</a>
+							</Link>
 						</span>
 						<h3 className='mb-4 text-white font-Roboto '>
 							For inquiries or questions:

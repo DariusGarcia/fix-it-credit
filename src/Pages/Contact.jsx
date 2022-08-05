@@ -2,6 +2,8 @@ import React from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import logo from '../Assets/Images/black-logo.png'
+import { MdMessage, MdSend } from 'react-icons/md'
+
 export default function Contact() {
 	return (
 		<>
@@ -11,12 +13,12 @@ export default function Contact() {
 				<div className='md:flex md:flex-col justify-center '>
 					<article className='flex flex-col w-screen h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
 						<div className='flex md:w-full flex-col py-4 h-full text-white  rounded-lg justify-center items-center bg-blue'>
-							<h1 className='my-2 text-2xl md:text-6xl font-DMSans'>
-								Get in touch
+							<h1 className='flex flex-row  items-center gap-4 my-2 text-2xl md:text-6xl font-DMSans'>
+								Get in touch <MdMessage size={40}></MdMessage>
 							</h1>
 
-							<p className='my-2 text-xl'>Phone: (626) 922 - 0791</p>
-							<p className='my-2 text-xl'>Email: info@fixitcredit.com</p>
+							<p className='my-2 text-2xl'>Phone: (626) 922 - 0791</p>
+							<p className='my-2 text-2xl'>Email: info@fixitcredit.com</p>
 							{/* <img
 								src={logo}
 								alt='logo'
@@ -65,11 +67,15 @@ export default function Contact() {
 										placeholder='Message'
 										name='message'
 									/>
-									<input
-										type='submit'
-										value='Send Message'
-										className='w-max md:w-1/3 bg-gradient-to-r from-gradBlue to-gradBlue2 text-white rounded-md flex justify-center p-4 my-4 hover:bg-gradBlue hover:scale-95 hover:outline-4 hover:outline-black ease-in-out delay-50'
-									/>
+									<span className='flex flex-row items-center gap-2'>
+										<button
+											type='submit'
+											value='Send Message'
+											className='w-max md:w-1/3 bg-gradBlue2 text-white text-lg rounded-md flex justify-center items-center gap-3 p-4 my-4 hover:bg-gradBlue hover:scale-95 hover:outline-4 hover:outline-black ease-in-out delay-50'>
+											Send Message
+											<MdSend size={30}></MdSend>
+										</button>
+									</span>
 								</div>
 							</form>
 						</div>

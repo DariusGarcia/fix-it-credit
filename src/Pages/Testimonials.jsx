@@ -27,9 +27,9 @@ export default function Testimonials() {
 						</p>
 					</span>
 				</header>
-				<section className='w-full flex justify-center'>
-					<div className='flex flex-row flex-wrap place-items-center md:w-5/6 items-start gap-4 text-grey content-center justify-center relative'>
-						<article className='md:w-96 ml-0 my-4 bg-zinc rounded-xl p-2 md:p-2 shadow-xl'>
+				<section className='w-full flex justify-center mt-4 mb-16'>
+					<div className='flex flex-row flex-wrap place-items-center md:w-5/6 items-start gap-4 md:gap-16 text-grey content-center justify-center relative'>
+						<article className='md:w-96 ml-0 md:mt-0 bg-zinc rounded-xl p-2 md:p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
@@ -47,7 +47,7 @@ export default function Testimonials() {
 								<h1 className='ml-4 pt-5 font-bold '>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
@@ -62,7 +62,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
@@ -79,7 +79,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
@@ -94,7 +94,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I soally been great. I would be happy to refer someone
@@ -109,7 +109,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
@@ -129,7 +129,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have
