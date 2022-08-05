@@ -10,11 +10,11 @@ const Landing = () => {
 	return (
 		<div>
 			<NavBar />
-			<div className='relative flex flex-col h-full md:my-48 w-full bg-white  md:mb-48  '>
-				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center md:flex-row'>
+			<div className='relative flex flex-col  pt-8 md:py-48 w-full md:h-screen bg-curve-bg'>
+				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center'>
 					<article
 						className='flex flex-col lg:w-1/3 justify-center
-					 mb-16 order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
+					 mb-12  order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
 						<header className=''>
 							<h1 className='text-white text-4xl font-semibold'>
 								Better credit, easier.
@@ -39,7 +39,7 @@ const Landing = () => {
 						<h3 className='mb-4 text-white '>For inquiries or questions:</h3>
 						<h3 className='text-2xl text-white '>Call xxx-xxx-xxxx</h3>
 					</article>
-					<article className='flex justify-center w-full lg:w-1/3'>
+					<article className='flex justify-center w-full mb-12 md:mb-0 lg:w-1/3'>
 						<img
 							className='rounded-lg w-full '
 							src={logo}

@@ -22,8 +22,9 @@ module.exports = {
 			spectrum: '#003057',
 			neutral: '#fafafa',
 			zinc: '#f1f1f1',
-			gradBlue: '#090979',
+			gradBlue: '#004999',
 			gradBlue2: '#009dff',
+			slate: '#111827',
 		},
 		extend: {
 			backgroundImage: {
