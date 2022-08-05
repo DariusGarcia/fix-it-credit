@@ -4,7 +4,7 @@ import { MdPhoneIphone, MdEmail } from 'react-icons/md'
 const Footer = () => {
 	return (
 		<div className=' flex justify-evenly w-full relative bottom-0 h-56 md:h-64 md:p-4 text-xs md:text-base bg-primary text-white'>
-			<div className='flex flex-row text-center justify-between  w-full py-8 md:p-4'>
+			<div className='flex flex-row text-center justify-between w-full py-8 md:p-4'>
 				<section className='pl-2'>
 					<article className='text-start'>
 						{' '}

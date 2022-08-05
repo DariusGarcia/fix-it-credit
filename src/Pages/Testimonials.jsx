@@ -13,20 +13,21 @@ export default function Testimonials() {
 			<div className='md:h-full flex flex-col px-4 text-neutral bg-curve-bg pt-4'>
 				<header className=' flex justify-center flex-col text-grey mb-8  rounded-lg '>
 					{' '}
-					<span className='flex flex-row md:mx-36 mb-4 gap-2 items-center'>
-						<h1 className='flex  md:justify-center md:text-4xl text-2xl font-bold    '>
+					<span className='flex md:justify-center flex-col  mb-4 gap-2 items-center'>
+						<h1 className='flex md:text-4xl text-2xl font-bold    '>
 							Testimonials
 						</h1>
 						<MdFactCheck size='35'></MdFactCheck>
+
+						<p className='flex md:justify-center text-center md:w-1/3 md:ml-36 pl-px text-lg '>
+							It is our pleasure to present these success stories and
+							testimonials from some of our clients.
+						</p>
 					</span>
-					<p className='flex justify-start md:ml-36 pl-px text-lg '>
-						It is our pleasure to present these success stories and testimonials
-						from some of our clients.
-					</p>
 				</header>
-				<section className='md:mx-36  '>
-					<div className='place-items-start flex flex-col md:grid md:grid-cols-2 text-grey content-center justify-center relative'>
-						<article className='ml-0 md:w-3/5  my-4 bg-zinc rounded-xl p-2 md:p-2'>
+				<section className=''>
+					<div className='place-items-center  flex flex-col md:grid md:grid-cols-2 text-grey content-center justify-center relative'>
+						<article className='ml-0 my-4 bg-zinc rounded-xl p-2 md:p-2'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
 								now and I so happy with how it all turned out. You all have

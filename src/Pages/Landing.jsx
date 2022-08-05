@@ -10,14 +10,16 @@ const Landing = () => {
 	return (
 		<div>
 			<NavBar />
-			<div className='relative flex flex-col justify-center items-center md:h-full w-full bg-white md:pt-24 md:mb-48 .'>
-				<section className='px-4 flex flex-col justify-center md:gap-16 md:flex-row'>
-					<article className='flex flex-col order-last md:order-first justify-around md:min-w-96 md:w-1/2 lg:w-1/3 mb-16 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
+			<div className='relative flex flex-col h-full md:my-48 w-full bg-white  md:mb-48  '>
+				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center md:flex-row'>
+					<article
+						className='flex flex-col lg:w-1/3 justify-center
+					 mb-16 order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg rounded-lg '>
 						<header className=''>
-							<h1 className='text-primary text-4xl font-semibold'>
+							<h1 className='text-white text-4xl font-semibold'>
 								Better credit, easier.
 							</h1>
-							<p className='py-8'>
+							<p className='py-8 text-white'>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
 								enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -34,11 +36,14 @@ const Landing = () => {
 								Learn More
 							</a>
 						</span>
-						<h3 className='mb-4 text-grey'>For inquiries or questions:</h3>
-						<h3 className='text-grey text-2xl font-bold'>Call xxx-xxx-xxxx</h3>
+						<h3 className='mb-4 text-white '>For inquiries or questions:</h3>
+						<h3 className='text-2xl text-white '>Call xxx-xxx-xxxx</h3>
 					</article>
-					<article className='flex justify-center'>
-						<img className=' rounded-lg' src={logo} alt='section-logo'></img>
+					<article className='flex justify-center w-full lg:w-1/3'>
+						<img
+							className='rounded-lg w-full '
+							src={logo}
+							alt='section-logo'></img>
 					</article>
 				</section>
 			</div>

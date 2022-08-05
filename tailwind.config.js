@@ -4,6 +4,9 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
+		fontFamily: {
+			oswald: ['Oswald', 'sans-serif'],
+		},
 		colors: {
 			white: '#ffffff',
 			black: '#000000',
@@ -19,6 +22,8 @@ module.exports = {
 			spectrum: '#003057',
 			neutral: '#fafafa',
 			zinc: '#f1f1f1',
+			gradBlue: '#090979',
+			gradBlue2: '#009dff',
 		},
 		extend: {
 			backgroundImage: {
