@@ -6,6 +6,9 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			oswald: ['Oswald', 'sans-serif'],
+			DMSans: ['DM Sans', 'sans-serif'],
+			Roboto: ['Roboto', 'sans-serif'],
+			Inter: ['Inter', 'sans-serif'],
 		},
 		colors: {
 			white: '#ffffff',

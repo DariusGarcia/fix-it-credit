@@ -9,16 +9,18 @@ export default function Contact() {
 
 			<div className='flex justify-center  mb-12  font-inter'>
 				<div className='md:flex md:flex-col justify-center '>
-					<article className='flex flex-col w-screen h-96 md:h-full bg-primary mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
-						<div className='flex md:w-full flex-col py-4  text-white  rounded-lg justify-center items-center h-full bg-blue'>
-							<h1 className='my-2 text-2xl'>GET IN TOUCH</h1>
+					<article className='flex flex-col w-screen h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 mt-4 mx-2 md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
+						<div className='flex md:w-full flex-col py-4 h-full text-white  rounded-lg justify-center items-center bg-blue'>
+							<h1 className='my-2 text-2xl md:text-6xl font-DMSans'>
+								Get in touch
+							</h1>
 
-							<p className='my-2'>Phone: (626) 922 - 0791</p>
-							<p className='my-2'>Email: info@fixitcredit.com</p>
-							<img
+							<p className='my-2 text-xl'>Phone: (626) 922 - 0791</p>
+							<p className='my-2 text-xl'>Email: info@fixitcredit.com</p>
+							{/* <img
 								src={logo}
 								alt='logo'
-								className='py-2 my-6 bg-white rounded-lg w-56'></img>
+								className='py-2 my-6 bg-white rounded-lg w-56'></img> */}
 						</div>
 					</article>
 					<article className='flex  justify-center   '>
@@ -66,7 +68,7 @@ export default function Contact() {
 									<input
 										type='submit'
 										value='Send Message'
-										className='w-max md:w-1/3 bg-primary text-white rounded-md flex justify-center p-4 my-4 hover:scale-95 hover:outline-4 hover:outline-black ease-in-out delay-50'
+										className='w-max md:w-1/3 bg-gradient-to-r from-gradBlue to-gradBlue2 text-white rounded-md flex justify-center p-4 my-4 hover:bg-gradBlue hover:scale-95 hover:outline-4 hover:outline-black ease-in-out delay-50'
 									/>
 								</div>
 							</form>

@@ -11,24 +11,24 @@ export default function Testimonials() {
 		<div>
 			<NavBar />
 			<div className='md:h-full flex flex-col px-4 justify-center text-neutral bg-curve-bg pt-4'>
-				<header className='flex justify-center items-center flex-col text-slate w-full mb-8 rounded-lg '>
+				<header className='flex justify-center items-center flex-col text-slate w-full mb-4 md:mb-8 rounded-lg '>
 					{' '}
-					<span className='flex md:justify-center flex-col w-3/5 items-center '>
-						<span className='flex flex-row text-center gap-2 '>
-							<h1 className='flex md:text-4xl text-2xl font-bold    '>
+					<span className='flex md:justify-center flex-col md:w-3/5 items-center '>
+						<span className='flex flex-row text-center gap-2 border-b-4 border-black  '>
+							<h1 className='flex md:text-4xl text-2xl font-bold font-DMSans  '>
 								Testimonials
 							</h1>
 							<MdFactCheck size='40'></MdFactCheck>
 						</span>
 
-						<p className='flex md:justify-center text-center  md:w-1/2 text-lg md:my-10'>
+						<p className='flex md:justify-center text-center w-full  md:w-1/2 text-lg mt-4 md:mt-10 font-Roboto'>
 							It is our pleasure to present these success stories and
 							testimonials from some of our clients.
 						</p>
 					</span>
 				</header>
 				<section className='w-full flex justify-center'>
-					<div className='flex flex-row flex-wrap place-items-center md:w-5/6 items-start gap-4  text-grey content-center justify-center relative'>
+					<div className='flex flex-row flex-wrap place-items-center md:w-5/6 items-start gap-4 text-grey content-center justify-center relative'>
 						<article className='md:w-96 ml-0 my-4 bg-zinc rounded-xl p-2 md:p-2 shadow-xl'>
 							<p className=''>
 								Quote icon "You guys did such a great job. My score is over 700
@@ -44,7 +44,7 @@ export default function Testimonials() {
 									src={person}
 									alt='person'
 									className='h-16 rounded-full'></img>
-								<h1 className='ml-4 pt-5 font-bold'>John Doe</h1>
+								<h1 className='ml-4 pt-5 font-bold '>John Doe</h1>
 							</div>
 						</article>
 						<article className='md:w-96 my-4 bg-zinc rounded-xl p-2 shadow-xl'>
