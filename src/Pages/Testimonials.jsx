@@ -5,6 +5,7 @@ import person from '../Assets/Images/avatar.jpg'
 import MessageBtn from '../Components/MessageBtn'
 import { MdFactCheck, MdLibraryAddCheck } from 'react-icons/md'
 import { ImQuotesLeft } from 'react-icons/im'
+
 import curve from '../Assets/Images/smooth.jpg'
 
 export default function Testimonials() {
@@ -15,14 +16,14 @@ export default function Testimonials() {
 				<header className='flex justify-center items-center flex-col text-slate w-full mb-4 md:mb-8 rounded-lg '>
 					{' '}
 					<span className='flex md:justify-center flex-col md:w-3/5 items-center text-grey'>
-						<span className='flex flex-row text-center gap-2 border-b-4 border-black  '>
+						<span className='flex flex-row text-center gap-2 border-b-4 border-grey  '>
 							<h1 className='flex md:text-4xl text-xl font-black font-oswald  '>
 								Testimonials
 							</h1>
 							<MdFactCheck size='40'></MdFactCheck>
 						</span>
 
-						<p className='flex md:justify-center text-center w-full  md:w-1/2 text-lg mt-4 md:mt-6 font-Roboto'>
+						<p className='flex md:justify-center text-center w-full  md:w-3/5 text-lg mt-4 md:mt-6 font-Roboto'>
 							It is our pleasure to present these success stories and
 							testimonials from some of our clients.
 						</p>
@@ -30,7 +31,7 @@ export default function Testimonials() {
 				</header>
 				<section className='w-full flex justify-center mt-4 mb-16'>
 					<div className='flex flex-row flex-wrap place-items-center md:w-full lg:w-5/6 items-start gap-4 md:gap-10 text-grey content-center justify-center relative'>
-						<article className='md:w-96 ml-0 md:mt-0 bg-zinc rounded-xl p-2 md:p-2 shadow-xl'>
+						<article className='md:w-96 ml-0 md:mt-0 bg-white rounded-xl p-2 md:p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -52,7 +53,7 @@ export default function Testimonials() {
 								<h1 className='ml-4 pt-5 font-bold '>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -72,7 +73,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -94,7 +95,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -114,7 +115,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -134,7 +135,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -158,7 +159,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -178,7 +179,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-zinc rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>

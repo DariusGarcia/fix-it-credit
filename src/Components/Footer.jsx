@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
 	return (
-		<div className=''>
-			<div className=' flex justify-evenly flex-row md:flex-col w-full relative bottom-0 h-full md:h-72 md:p-4 text-xs md:text-base bg-primary text-white'>
+		<div className='z-50'>
+			<div className=' flex justify-evenly flex-row md:flex-col w-full relative bottom-0 h-full md:p-4 text-xs md:text-base bg-primary text-white'>
 				<div className='flex flex-col md:flex-row text-center  items-center md:justify-evenly w-full py-8 md:p-4 '>
 					<section className='md:w-max mb-6 md:mb-0'>
 						<article className='flex flex-col items-center'>
 							<img
-								className='h-12 md:h-24 rounded-md mb-4 md:mb-0'
+								className='h-12 md:h-48 rounded-md mb-4 md:mb-0'
 								src={blue}
 								alt='logo'></img>
 							<h3>©2022 Fix It Credit</h3>
@@ -32,6 +32,9 @@ const Footer = () => {
 									</li>
 									<li className='ease-in-out'>
 										<Link to='/testimonials'>TESTIMONIALS</Link>
+									</li>
+									<li className='ease-in-out'>
+										<Link to='/credit-tips'>CREDIT TIPS</Link>
 									</li>
 									<li className='ease-in-out'>
 										<Link to='/contact'>CONTACT</Link>
@@ -58,7 +61,7 @@ const Footer = () => {
 					</section>
 				</div>
 			</div>
-			<div className='flex justify-center bottom-0 bg-grey2 h-16 '>
+			<div className='flex justify-center bottom-0 bg-grey2 h-16 z-50'>
 				<section className='flex flex-row justify-center items-center'>
 					<h3 className=''>
 						Copyright ©2022 Fix It Credit. All right reserved.
