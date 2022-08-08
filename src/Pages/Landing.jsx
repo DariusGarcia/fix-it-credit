@@ -11,7 +11,7 @@ const Landing = () => {
 	return (
 		<div>
 			<NavBar />
-			<div className='relative flex flex-col  pt-8 md:py-40 w-full md:h-screen bg-curve-bg'>
+			<div className='relative flex flex-col  pt-8 md:pb-40 md:pt-24 w-full md:h-screen bg-curve-bg'>
 				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center'>
 					<article
 						className='flex flex-col lg:w-1/3 justify-center
@@ -34,7 +34,7 @@ const Landing = () => {
 							<Link to='/about'>
 								<a
 									href='/about'
-									className=' bg-greybtn p-4 px-12 mb-6 rounded-md text-xl font-semibold font-Roboto tracking-wider hover:bg-primary hover:text-white shadow-md hover:shadow-lg hover:scale-95 outline-grey transition ease-in-out delay-10'>
+									className=' bg-greybtn p-4 px-12 mb-6 rounded-md text-xl font-semibold font-Roboto tracking-wider hover:bg-nerdBlue hover:border-2 border-gradBlue  hover:text-black shadow-md hover:shadow-lg hover:scale-110 outline-grey transition ease-in-out delay-10'>
 									Learn More
 								</a>
 							</Link>

@@ -29,6 +29,9 @@ module.exports = {
 			gradBlue2: '#009dff',
 			slate: '#111827',
 			grey2: 'f5f6f6',
+			grey3: '#cbd5e1',
+			netlify: '#31c9c9',
+			nerdBlue: '#eef7ff',
 		},
 		extend: {
 			backgroundImage: {

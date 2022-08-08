@@ -9,6 +9,7 @@ import ScrollToTop from './Components/ScrollToTop'
 // import pages
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Tips from './Pages/Tips'
 import Testimonials from './Pages/Testimonials'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
@@ -20,6 +21,7 @@ root.render(
 					<Route path='/' element={<App />} />
 					<Route path='about' element={<About />} />
 					<Route path='contact' element={<Contact />} />/
+					<Route path='credit-tips' element={<Tips />} />/
 					<Route path='testimonials' element={<Testimonials />} />
 				</Routes>
 			</ScrollToTop>
