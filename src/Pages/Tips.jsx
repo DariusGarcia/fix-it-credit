@@ -4,6 +4,7 @@ import Footer from '../Components/Footer'
 import Spline from '@splinetool/react-spline'
 import { FaClipboardList } from 'react-icons/fa'
 import { useSpring, animated, config } from 'react-spring'
+import MessageBtn from '../Components/MessageBtn'
 
 const Tips = () => {
 	return (
@@ -23,9 +24,9 @@ const Tips = () => {
 						{Text2()}
 					</p>
 				</header>
-				<span className='flex justify-center h-96 w-full md:w-3/5 mb-12'>
+				<span className='flex justify-center h-96 w-full md:w-3/5 mb-12 cursor-grab'>
 					<Spline
-						className='md:rounded-lg '
+						className='md:rounded-lg shadow-2xl '
 						scene='https://prod.spline.design/7w03NsxuGeMS815p/scene.splinecode'
 					/>
 				</span>
@@ -94,6 +95,7 @@ const Tips = () => {
 					</div>
 				</section>
 			</div>
+			<MessageBtn></MessageBtn>
 			<Footer />
 		</div>
 	)

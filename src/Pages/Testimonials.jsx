@@ -17,8 +17,8 @@ export default function Testimonials() {
 				<header className='flex justify-center items-center flex-col text-slate w-full mb-4 md:mb-8 rounded-lg '>
 					{' '}
 					<span className='flex md:justify-center flex-col md:w-3/5 items-center text-grey'>
-						<span className='flex flex-row text-center gap-2 border-b-4 border-grey  '>
-							<h1 className='flex md:text-4xl text-xl font-black font-oswald  '>
+						<span className='flex flex-row text-center items-end gap-2'>
+							<h1 className='flex md:text-6xl text-4xl font-black font-oswald  '>
 								{Text1()}
 							</h1>
 							<MdFactCheck size='40'></MdFactCheck>
@@ -31,7 +31,7 @@ export default function Testimonials() {
 				</header>
 				<section className='w-full flex justify-center mt-4 mb-16'>
 					<div className='flex flex-row flex-wrap place-items-center md:w-full lg:w-5/6 items-start gap-4 md:gap-10 text-grey content-center justify-center relative'>
-						<article className='md:w-96 ml-0 md:mt-0 bg-white rounded-xl p-2 md:p-2 shadow-xl'>
+						<article className='md:w-96 ml-0 md:mt-0 bg-white rounded-xl p-2 md:p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -53,7 +53,7 @@ export default function Testimonials() {
 								<h1 className='ml-4 pt-5 font-bold '>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -73,7 +73,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -95,7 +95,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -115,7 +115,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -135,7 +135,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -159,7 +159,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>
@@ -179,7 +179,7 @@ export default function Testimonials() {
 								<h1 className='pl-4 pt-5 font-bold'>John Doe</h1>
 							</div>
 						</article>
-						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl'>
+						<article className='md:w-96 bg-white rounded-xl p-2 shadow-xl border-2 border-white hover:bg-nerdBlue hover:border-2 hover:border-gradBlue'>
 							<div className='flex flex-row text-start '>
 								<span className='mr-2 text-gradBlue2'>
 									<ImQuotesLeft size={25}></ImQuotesLeft>

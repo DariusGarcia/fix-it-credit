@@ -8,7 +8,7 @@ let animateScroll = Scroll.animateScroll
 export default function NavBar() {
 	return (
 		<>
-			<nav className='flex sticky top-0 items-center justify-evenly md:justify-center h-28 w-full p-5 bg-neutral z-50 text-sm md:text-base rounded-b-xl'>
+			<nav className='flex sticky top-0 items-center justify-evenly md:justify-center h-28 w-full p-5 bg-white z-50 text-sm md:text-base rounded-b-xl'>
 				<div className='flex flex-row justify-center text-center'>
 					<ul className='flex items-end justify-center place-content-end cursor-pointer'>
 						<li
@@ -35,16 +35,17 @@ export default function NavBar() {
 						{/* <li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/'>HOME</Link>
 						</li> */}
-						<li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
+						<li className='border-b-2 border-white hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/about'>About</Link>
 						</li>
-						<li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
+
+						<li className='border-b-2 border-white hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/testimonials'>Testimonials</Link>
 						</li>
-						<li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
+						<li className='border-b-2 border-white hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/credit-tips'>Credit Tips</Link>
 						</li>
-						<li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
+						<li className='border-b-2 border-white hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/contact'>Contact</Link>
 						</li>
 					</ul>
