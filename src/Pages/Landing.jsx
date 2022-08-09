@@ -1,11 +1,11 @@
+import React, { useState } from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
-
 import logo from '../Assets/Images/black-logo.png'
 import MessageBtn from '../Components/MessageBtn'
 
-import React from 'react'
+import { useSpring, animated, config } from 'react-spring'
 
 const Landing = () => {
 	return (
@@ -17,8 +17,9 @@ const Landing = () => {
 						className='flex flex-col lg:w-1/3 justify-center
 					 mb-12  order-last md:order-first bg-gradient-to-r from-gradBlue to-gradBlue2 md:mb-0 px-2 py-12 md:py-4 md:p-4 shadow-lg md:rounded-lg '>
 						<header className=''>
-							<h1 className='text-white text-4xl font-semibold font-Inter'>
-								Better credit, <span className='italic'>easier.</span>
+							<h1 className='flex justify-center gap-2 flex-row text-white text-4xl font-semibold font-Inter'>
+								{Text1()}
+								<span className='italic'>{Text2()}</span>
 							</h1>
 							<p className='py-8 text-white'>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -58,6 +59,34 @@ const Landing = () => {
 			<Footer />
 		</div>
 	)
+}
+function Text1() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 200,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return <animated.h1 style={props}>Better credit,</animated.h1>
+}
+function Text2() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 800,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return <animated.h1 style={props}>easier.</animated.h1>
 }
 
 export default Landing

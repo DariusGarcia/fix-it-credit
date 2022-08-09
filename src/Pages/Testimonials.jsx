@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
 import person from '../Assets/Images/avatar.jpg'
 import MessageBtn from '../Components/MessageBtn'
 import { MdFactCheck, MdLibraryAddCheck } from 'react-icons/md'
 import { ImQuotesLeft } from 'react-icons/im'
+import { useSpring, animated, config } from 'react-spring'
 
 import curve from '../Assets/Images/smooth.jpg'
 
@@ -18,14 +19,13 @@ export default function Testimonials() {
 					<span className='flex md:justify-center flex-col md:w-3/5 items-center text-grey'>
 						<span className='flex flex-row text-center gap-2 border-b-4 border-grey  '>
 							<h1 className='flex md:text-4xl text-xl font-black font-oswald  '>
-								Testimonials
+								{Text1()}
 							</h1>
 							<MdFactCheck size='40'></MdFactCheck>
 						</span>
 
 						<p className='flex md:justify-center text-center w-full  md:w-3/5 text-lg mt-4 md:mt-6 font-Roboto'>
-							It is our pleasure to present these success stories and
-							testimonials from some of our clients.
+							{Text2()}
 						</p>
 					</span>
 				</header>
@@ -209,5 +209,39 @@ export default function Testimonials() {
 			<MessageBtn />
 			<Footer />
 		</div>
+	)
+}
+
+function Text1() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 200,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return <animated.h1 style={props}>Testimonials</animated.h1>
+}
+function Text2() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 400,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return (
+		<animated.h1 style={props}>
+			It is our pleasure to present these success stories and testimonials from
+			some of our clients.
+		</animated.h1>
 	)
 }

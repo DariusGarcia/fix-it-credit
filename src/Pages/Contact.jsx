@@ -1,7 +1,6 @@
 import React from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
-import logo from '../Assets/Images/black-logo.png'
 import { MdMessage, MdSend } from 'react-icons/md'
 
 export default function Contact() {
@@ -11,8 +10,8 @@ export default function Contact() {
 
 			<div className='flex justify-center md:mb-12 mb-48 h-full  font-inter'>
 				<div className='md:flex md:flex-col w-full justify-center '>
-					<article className='flex  flex-col  h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 md:mt-4  md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
-						<div className='flex md:w-full flex-col py-4 h-full text-white  rounded-md justify-center  font-black font-oswald items-center bg-blue'>
+					<article className='flex  flex-col  h-56 md:h-96 bg-gradient-to-r from-gradBlue to-gradBlue2 md:mx-0 md:mt-0 md:m-0 shadow-xl rounded-lg items-center justify-center md:justify-start md:pb-0 '>
+						<div className='flex md:w-full flex-col py-4 h-full text-white rounded-md justify-center font-black font-oswald items-center bg-blue'>
 							<h1 className='flex flex-row  items-center gap-4 my-2 text-2xl md:text-4xl '>
 								Get in touch <MdMessage size={40}></MdMessage>
 							</h1>

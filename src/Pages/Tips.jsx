@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from '../Components/NavBar'
 import Footer from '../Components/Footer'
-import { TiPin } from 'react-icons/ti'
 import Spline from '@splinetool/react-spline'
 import { FaClipboardList } from 'react-icons/fa'
+import { useSpring, animated, config } from 'react-spring'
 
 const Tips = () => {
 	return (
@@ -13,15 +13,14 @@ const Tips = () => {
 				<header className='flex flex-col justify-start items-start md:w-3/5 p-2 md:p-0 mb-8'>
 					<div className='flex flex-row items-center gap-4'>
 						<h1 className='md:text-6xl text-4xl font-black font-oswald'>
-							Credit Tips
+							{Text1()}
 						</h1>
 						<span className=''>
-							{/* <TiPin size={50}></TiPin> */}
 							<FaClipboardList size={45}></FaClipboardList>
 						</span>
 					</div>
 					<p className='flex justify-start text-lg md:text-2xl text-start items-center pl-1 md:pl-0 mt-2'>
-						Here are some credit tips to keep your credit score in check.
+						{Text2()}
 					</p>
 				</header>
 				<span className='flex justify-center h-96 w-full md:w-3/5 mb-12'>
@@ -97,6 +96,38 @@ const Tips = () => {
 			</div>
 			<Footer />
 		</div>
+	)
+}
+function Text1() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 200,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return <animated.h1 style={props}>Credit Tips</animated.h1>
+}
+function Text2() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 800,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return (
+		<animated.h1 style={props}>
+			Here are some credit tips to keep your credit score in check.
+		</animated.h1>
 	)
 }
 
