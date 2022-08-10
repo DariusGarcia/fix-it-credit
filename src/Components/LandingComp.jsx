@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FaWrench, FaClipboardList } from 'react-icons/fa'
 import { MdFactCheck } from 'react-icons/md'
 import { NewspaperIcon, PhoneIcon, SupportIcon } from '@heroicons/react/outline'
@@ -30,7 +31,7 @@ const supportLinks = [
 
 export default function LandingComp() {
 	return (
-		<div className='bg-white font-DMSans'>
+		<div className='bg-zinc font-DMSans'>
 			{/* Header */}
 			<div className='relative pb-32 bg-gray-800'>
 				<div className='absolute inset-0'>
@@ -73,7 +74,7 @@ export default function LandingComp() {
 					{supportLinks.map((link) => (
 						<div
 							key={link.name}
-							className='flex flex-col bg-zinc rounded-2xl shadow-xl'>
+							className='flex flex-col bg-white rounded-2xl shadow-xl'>
 							<div className='flex-1 relative pt-16 px-6 pb-8 md:px-8'>
 								<div className='absolute top-0 p-5 inline-block bg-primary rounded-xl shadow-lg transform -translate-y-1/2'>
 									<link.icon
@@ -88,13 +89,11 @@ export default function LandingComp() {
 									{link.description}
 								</p>
 							</div>
-							<div className='p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8'>
-								<a
-									href={link.href}
-									className='text-base font-medium text-indigo-700 hover:text-indigo-600'>
-									{link.name}
+							<div className='p-6 bg-grey50 rounded-bl-2xl rounded-br-2xl md:px-8'>
+								<li className='text-base list-none font-medium p-4 hover:bg-grey300 rounded-xl  text-primary hover:opacity-75'>
+									<Link to={link.href}>{link.name}</Link>
 									<span aria-hidden='true'> &rarr;</span>
-								</a>
+								</li>
 							</div>
 						</div>
 					))}

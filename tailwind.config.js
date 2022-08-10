@@ -37,6 +37,7 @@ module.exports = {
 			teal: '#004999',
 			grey800: '#1f2937',
 			grey300: '#d1d5db',
+			grey50: '#f9fafb',
 		},
 		extend: {
 			backgroundImage: {
