@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavBar from '../Components/NavBar'
+import Navigation from '../Components/Navigation'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom'
 import logo from '../Assets/Images/black-logo.png'
@@ -10,7 +10,7 @@ import { useSpring, animated, config } from 'react-spring'
 const Landing = () => {
 	return (
 		<div>
-			<NavBar />
+			<Navigation />
 			<div className='relative flex flex-col pt-8 md:pt-32 md:pb-56 w-full md:h-full bg-curve-bg'>
 				<section className='md:px-4 flex md:flex-row justify-center lg:gap-4 flex-col items-center'>
 					<article
@@ -37,7 +37,7 @@ const Landing = () => {
 							<Link to='/about'>
 								<a
 									href='/about'
-									className=' bg-greybtn p-4 px-24 mb-6 rounded-md text-xl font-black font-DMSans tracking-widest hover:bg-nerdBlue hover:border-2 border-gradBlue hover:text-black shadow-md hover:shadow-lg hover:scale-110 outline-grey transition ease-in-out delay-10'>
+									className=' border-2 border-white p-4 px-24 mb-6 rounded-md text-xl text-white font-black font-DMSans tracking-widest hover:bg-nerdBlue hover:border-2  hover:text-black shadow-md hover:shadow-lg hover:scale-110 outline-grey transition ease-in-out delay-10'>
 									Learn More
 								</a>
 							</Link>

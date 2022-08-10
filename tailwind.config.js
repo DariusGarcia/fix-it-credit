@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
-
+// tailwind.config.js
+const colors = require('tailwindcss/colors')
 module.exports = {
 	content: ['./src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
@@ -32,6 +33,8 @@ module.exports = {
 			grey3: '#cbd5e1',
 			netlify: '#31c9c9',
 			nerdBlue: '#eef7ff',
+			'warm-gray': colors.warmGray,
+			teal: '#004999',
 		},
 		extend: {
 			backgroundImage: {
@@ -55,5 +58,7 @@ module.exports = {
 				})
 			})
 		}),
+
+		require('@tailwindcss/forms'),
 	],
 }

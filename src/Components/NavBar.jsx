@@ -8,7 +8,7 @@ let animateScroll = Scroll.animateScroll
 export default function NavBar() {
 	return (
 		<>
-			<nav className='flex sticky top-0 items-center justify-evenly md:justify-center h-28 w-full p-5 bg-white z-50 text-sm md:text-base rounded-b-xl'>
+			<nav className='flex sticky top-0 items-center justify-center gap-6 md:gap-0 md:justify-center h-28 w-full px-0 bg-white z-50 text-sm md:text-base rounded-b-xl'>
 				<div className='flex flex-row justify-center text-center'>
 					<ul className='flex items-end justify-center place-content-end cursor-pointer'>
 						<li
@@ -31,7 +31,7 @@ export default function NavBar() {
 				</div>
 
 				<div className='flex flex-col align-center justify-center'>
-					<ul className='flex flex-row  font-bold spacing-wide md:spacing-widest align-center md:text-lg justify-center gap-2 md:gap-5 cursor-pointer font-oswald text-grey'>
+					<ul className='flex flex-row  font-semibold spacing-wide md:spacing-widest align-center md:text-lg justify-center gap-2 md:gap-5 cursor-pointer font-DMSans text-grey'>
 						{/* <li className='border-b-2 border-neutral hover:border-b-2 hover:border-primary ease-in-out hover:text-primary active:text-primary'>
 							<Link to='/'>HOME</Link>
 						</li> */}

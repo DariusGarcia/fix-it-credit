@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavBar from '../Components/NavBar'
+import Navigation from '../Components/Navigation'
 import Footer from '../Components/Footer'
 import MessageBtn from '../Components/MessageBtn'
 import { GiConvergenceTarget } from 'react-icons/gi'
@@ -12,7 +12,7 @@ import { useSpring, animated, config } from 'react-spring'
 export default function About() {
 	return (
 		<div className='bg-curve-bg'>
-			<NavBar />
+			<Navigation />
 			<div className='flex justify-around items-center rounded-xl flex-col md:mt-12 mb-24 md:mb-48 md:mb-0 h-full '>
 				<section className='flex justify-center h-full'>
 					<article className=''>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import NavBar from '../Components/NavBar'
+import Navigation from '../Components/Navigation'
 import Footer from '../Components/Footer'
 import person from '../Assets/Images/avatar.jpg'
 import MessageBtn from '../Components/MessageBtn'
@@ -12,7 +12,7 @@ import curve from '../Assets/Images/smooth.jpg'
 export default function Testimonials() {
 	return (
 		<div>
-			<NavBar />
+			<Navigation />
 			<div className='md:h-full flex flex-col px-4 justify-center text-neutral bg-curve-bg pt-4'>
 				<header className='flex justify-center items-center flex-col text-slate w-full mb-4 md:mb-8 rounded-lg '>
 					{' '}
@@ -24,7 +24,7 @@ export default function Testimonials() {
 							<MdFactCheck size='40'></MdFactCheck>
 						</span>
 
-						<p className='flex md:justify-center text-center w-full  md:w-3/5 text-lg mt-4 md:mt-6 font-Roboto'>
+						<p className='flex md:justify-center text-center w-full  md:w-3/5 text-lg mt-4 md:mt-6 font-DMSans'>
 							{Text2()}
 						</p>
 					</span>
@@ -233,7 +233,7 @@ function Text2() {
 		from: { opacity: 0 },
 		reset: false,
 		reverse: false,
-		delay: 400,
+		delay: 600,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	})
