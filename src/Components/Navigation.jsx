@@ -18,10 +18,10 @@ const navigation = [
 export default function Navigation() {
 	return (
 		<>
-			<Popover as='header' className='relative'>
+			<Popover as='header' className='sticky top-0 z-50'>
 				<div className='bg-warm-gray-50 md:flex md:justify-center '>
 					<nav
-						className='relative max-w-7xl mx-auto flex items-center justify-between py-6 md:py-12 px-6 xl:px-8'
+						className='sticky top-0 max-w-7xl mx-auto flex items-center justify-between py-6 md:py-12 px-6 xl:px-8'
 						aria-label='Global'>
 						<div className='flex items-center flex-1'>
 							<div className='flex items-center justify-between w-full lg:w-auto'>
