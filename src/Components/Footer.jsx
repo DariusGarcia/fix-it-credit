@@ -1,5 +1,5 @@
 import React from 'react'
-import blue from '../Assets/Images/blue-logo.png'
+import black from '../Assets/Images/black-logo.png'
 import { MdPhoneIphone, MdEmail } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
@@ -11,10 +11,9 @@ const Footer = () => {
 					<section className='md:w-max mb-6 md:mb-0'>
 						<article className='flex flex-col items-center'>
 							<img
-								className='h-12 md:h-48 rounded-md mb-4 md:mb-0'
-								src={blue}
+								className='h-12 md:h-48 rounded-md'
+								src={black}
 								alt='logo'></img>
-							<h3>©2022 Fix It Credit</h3>
 						</article>
 					</section>
 					<section className=''>
@@ -64,7 +63,7 @@ const Footer = () => {
 			<div className='flex justify-center bottom-0 bg-grey2 h-16 z-50'>
 				<section className='flex flex-row justify-center items-center'>
 					<h3 className=''>
-						Copyright ©2022 Fix It Credit. All right reserved.
+						Copyright ©2022 Fix It Credit Inc. All right reserved.
 					</h3>
 					<p className=''></p>
 				</section>

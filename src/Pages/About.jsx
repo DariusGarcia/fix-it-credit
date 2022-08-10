@@ -13,7 +13,7 @@ export default function About() {
 	return (
 		<div className='bg-curve-bg'>
 			<Navigation />
-			<div className='flex justify-around items-center rounded-xl flex-col md:mt-12 mb-24 md:mb-48 md:mb-0 h-full '>
+			<div className='flex justify-around items-center rounded-xl flex-col md:mt-12 mb-24 md:mb-48 h-full '>
 				<section className='flex justify-center h-full'>
 					<article className=''>
 						<h1 className='text-4xl md:text-5xl mt-8 md:mt-0 hover:text-primary text-grey font-black font-oswald'>
@@ -27,7 +27,9 @@ export default function About() {
 							<FaWrench size={100}></FaWrench>
 						</span>
 						<span className='flex ml-2 md:ml-0 flex-col'>
-							<p className='w-full font-black text-3xl mb-6 '>{Text2()}</p>
+							<p className='w-full font-black text-3xl mb-6 text-primary '>
+								{Text2()}
+							</p>
 							<p className='w-full '>{Text3()}</p>
 						</span>
 					</article>
@@ -36,7 +38,9 @@ export default function About() {
 							<FiTarget size={100}></FiTarget>
 						</span>
 						<span className='flex ml-2 md:ml-0 flex-col'>
-							<p className='flex font-black text-3xl mb-6'>{Text4()}</p>
+							<p className='flex font-black text-3xl mb-6 text-primary'>
+								{Text4()}
+							</p>
 							<p className='flex flex-col'>{Text5()}</p>
 						</span>
 					</article>
@@ -55,7 +59,7 @@ function Text1() {
 		from: { opacity: 0 },
 		reset: false,
 		reverse: false,
-		delay: 100,
+		delay: 200,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	})

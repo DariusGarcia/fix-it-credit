@@ -5,20 +5,21 @@ import Spline from '@splinetool/react-spline'
 import { FaClipboardList } from 'react-icons/fa'
 import { useSpring, animated, config } from 'react-spring'
 import MessageBtn from '../Components/MessageBtn'
-import Example from '../Components/Contact'
 
 const Tips = () => {
 	return (
 		<div className='bg-zinc'>
 			<Navigation />
-			<div className='flex flex-col items-center justify-center h-full mb-12 text-grey mt-8'>
+			<div className='flex flex-col items-center justify-center h-full mb-12 text-grey mt-12'>
 				<header className='flex flex-col justify-start items-start md:w-3/5 p-2 md:p-0 mb-8'>
 					<div className='flex flex-row items-center gap-4'>
 						<h1 className='md:text-6xl text-4xl font-black font-oswald'>
 							{Text1()}
 						</h1>
 						<span className=''>
-							<FaClipboardList size={45}></FaClipboardList>
+							<FaClipboardList
+								className='text-grey'
+								size={45}></FaClipboardList>
 						</span>
 					</div>
 					<p className='flex justify-start text-lg md:text-2xl text-start items-center pl-1 md:pl-0 mt-2'>
@@ -112,7 +113,6 @@ const Tips = () => {
 					</div>
 				</section>
 			</div>
-			<Example />
 			<MessageBtn></MessageBtn>
 			<Footer />
 		</div>
@@ -125,7 +125,7 @@ function Text1() {
 		from: { opacity: 0 },
 		reset: false,
 		reverse: false,
-		delay: 200,
+		delay: 150,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	})
@@ -139,7 +139,7 @@ function Text2() {
 		from: { opacity: 0 },
 		reset: false,
 		reverse: false,
-		delay: 800,
+		delay: 600,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	})

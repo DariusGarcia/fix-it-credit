@@ -35,6 +35,8 @@ module.exports = {
 			nerdBlue: '#eef7ff',
 			'warm-gray': colors.warmGray,
 			teal: '#004999',
+			grey800: '#1f2937',
+			grey300: '#d1d5db',
 		},
 		extend: {
 			backgroundImage: {

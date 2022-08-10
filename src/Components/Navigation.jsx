@@ -9,17 +9,17 @@ import { Popover, Transition } from '@headlessui/react'
 let animateScroll = Scroll.animateScroll
 const navigation = [
 	{ name: 'Home', href: '/' },
-	{ name: 'About', href: 'about' },
-	{ name: 'Testimonials', href: 'testimonials' },
-	{ name: 'Credit Tips', href: 'credit-tips' },
-	{ name: 'Contact Us', href: 'contact' },
+	{ name: 'About', href: '/about' },
+	{ name: 'Testimonials', href: '/testimonials' },
+	{ name: 'Credit Tips', href: '/credit-tips' },
+	{ name: 'Contact Us', href: '/contact' },
 ]
 
 export default function Navigation() {
 	return (
 		<>
-			<Popover as='header' className='sticky top-0 z-50'>
-				<div className='bg-warm-gray-50 md:flex md:justify-center '>
+			<Popover as='header' className='sticky top-0 z-50 text-oswald'>
+				<div className='bg-warm-gray-50 lg:flex lg:justify-center border-b-2 border-warm-gray-300'>
 					<nav
 						className='sticky top-0 max-w-7xl mx-auto flex items-center justify-between py-6 md:py-12 px-6 xl:px-8'
 						aria-label='Global'>
@@ -27,7 +27,11 @@ export default function Navigation() {
 							<div className='flex items-center justify-between w-full lg:w-auto'>
 								<a href='#'>
 									<span className='sr-only'>Workflow</span>
-									<img className='h-8 w-auto sm:h-10' src={blackLogo} alt='' />
+									<img
+										className='h-8 w-auto sm:h-10 rounded-md'
+										src={blackLogo}
+										alt=''
+									/>
 								</a>
 								<div className='-mr-2 flex items-center lg:hidden'>
 									<Popover.Button className='bg-warm-gray-50 rounded-md p-2 inline-flex items-center justify-center text-grey hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-teal-500'>
@@ -38,12 +42,11 @@ export default function Navigation() {
 							</div>
 							<div className='hidden space-x-10 lg:flex lg:ml-10'>
 								{navigation.map((item) => (
-									<a
+									<li
 										key={item.name}
-										href={item.href}
-										className='text-lg font-medium text-grey hover:text-warm-gray-900'>
-										{item.name}
-									</a>
+										className='text-lg font-medium list-none px-2 rounded-lg text-grey hover:bg-warm-gray-200 hover:text-warm-gray-900'>
+										<Link to={item.href}>{item.name}</Link>
+									</li>
 								))}
 							</div>
 						</div>
@@ -64,7 +67,11 @@ export default function Navigation() {
 						<div className='rounded-lg shadow-lg bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
 							<div className='px-5 pt-4 flex items-center justify-between'>
 								<div>
-									<img className='h-8 w-auto' src={blackLogo} alt='' />
+									<img
+										className='h-8 w-auto rounded-md'
+										src={blackLogo}
+										alt=''
+									/>
 								</div>
 								<div className='-mr-2'>
 									<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-warm-gray-400 hover:bg-warm-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500'>
@@ -73,15 +80,14 @@ export default function Navigation() {
 									</Popover.Button>
 								</div>
 							</div>
-							<div className='pt-5 pb-6'>
+							<div className='flex justify-center text-center  pt-5 pb-6'>
 								<div className='px-2 space-y-1'>
 									{navigation.map((item) => (
-										<a
+										<li
 											key={item.name}
-											href={item.href}
-											className='block px-3 py-2 rounded-md text-base font-medium text-warm-gray-900 hover:bg-warm-gray-50'>
-											{item.name}
-										</a>
+											className='block px-3 py-2 rounded-md w-full text-base font-medium text-warm-gray-900 hover:bg-warm-gray-100'>
+											<Link to={item.href}>{item.name}</Link>
+										</li>
 									))}
 								</div>
 							</div>

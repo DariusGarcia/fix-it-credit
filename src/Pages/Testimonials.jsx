@@ -13,7 +13,7 @@ export default function Testimonials() {
 	return (
 		<div>
 			<Navigation />
-			<div className='md:h-full flex flex-col px-4 justify-center text-neutral bg-curve-bg pt-4'>
+			<div className='md:h-full flex flex-col px-4 justify-center text-neutral bg-curve-bg pt-8 md:pt-12'>
 				<header className='flex justify-center items-center flex-col text-slate w-full mb-4 md:mb-8 rounded-lg '>
 					{' '}
 					<span className='flex md:justify-center flex-col md:w-3/5 items-center text-grey'>
@@ -219,7 +219,7 @@ function Text1() {
 		from: { opacity: 0 },
 		reset: false,
 		reverse: false,
-		delay: 200,
+		delay: 150,
 		config: config.molasses,
 		onRest: () => set(!flip),
 	})

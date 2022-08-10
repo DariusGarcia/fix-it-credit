@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import blackLogo from '../Assets/Images/black-logo.png'
 
 // tailwind.config.js
@@ -7,6 +7,8 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MailIcon, MenuIcon, PhoneIcon, XIcon } from '@heroicons/react/outline'
 import { MdMessage, MdSend } from 'react-icons/md'
+import { useSpring, animated, config } from 'react-spring'
+
 const colors = require('tailwindcss/colors')
 
 const offices = [
@@ -28,17 +30,16 @@ export default function Example() {
 			<main className='overflow-hidden'>
 				{/* Header */}
 				<div className='bg-warm-gray-50'>
-					<div className='py-12 lg:py-32'>
-						<div className='relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8'>
+					<div className='py-12 lg:py-16'>
+						<div className='relative z-10 max-w-7xl mx-auto pl-4 pr-8 sm:px-6 lg:px-8 font-oswald'>
 							<div className='flex flex-row items-center gap-4'>
-								<h1 className='flex text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl'>
-									Get in touch
+								<h1 className='flex text-4xl font-black tracking-tight text-grey sm:text-5xl  lg:text-6xl'>
+									{Text1()}
 								</h1>
-								<MdMessage className='' size={45}></MdMessage>
+								<MdMessage className='text-grey' size={45}></MdMessage>
 							</div>
 							<p className='mt-6 text-xl text-warm-gray-500 max-w-3xl'>
-								Have a question? Leave a message and a representative will get
-								back to you shortly.
+								{Text2()}
 							</p>
 						</div>
 					</div>
@@ -55,7 +56,7 @@ export default function Example() {
 					{/* Decorative dot pattern */}
 					<div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 						<svg
-							className='absolute z-0 top-0 right-0 transform -translate-y-16 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-24 lg:-translate-y-72'
+							className='absolute z-0 top-0 right-0 transform -translate-y-12 translate-x-1/2 sm:translate-x-1/4 md:-translate-y-16 lg:-translate-y-36'
 							width={404}
 							height={384}
 							fill='none'
@@ -74,7 +75,7 @@ export default function Example() {
 										y={0}
 										width={4}
 										height={4}
-										className='text-warm-gray-200'
+										className='text-warm-gray-300'
 										fill='currentColor'
 									/>
 								</pattern>
@@ -186,14 +187,14 @@ export default function Example() {
 											</defs>
 										</svg>
 									</div>
-									<h3 className='text-lg font-medium text-white'>
+									<h3 className='text-lg font-medium font-DMSans text-white'>
 										Contact information
 									</h3>
-									<p className='mt-6 text-base text-teal-50 max-w-3xl'>
+									<p className='mt-6 text-base text-teal-50 max-w-3xl font-DMSans'>
 										Nullam risus blandit ac aliquam justo ipsum. Quam mauris
 										volutpat massa dictumst amet. Sapien tortor lacus arcu.
 									</p>
-									<dl className='mt-8 space-y-6'>
+									<dl className='mt-8 space-y-6 font-DMSans'>
 										<dt>
 											<span className='sr-only'>Phone number</span>
 										</dt>
@@ -398,8 +399,8 @@ export default function Example() {
 				</section>
 
 				{/* Contact grid */}
-				<section aria-labelledby='offices-heading'>
-					<div className='max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8'>
+				<section aria-labelledby='offices-heading '>
+					<div className='max-w-7xl mx-auto py-24 font-DMSans px-4 sm:py-32 sm:px-6 lg:px-8'>
 						<h2
 							id='offices-heading'
 							className='text-3xl font-extrabold text-warm-gray-900'>
@@ -430,5 +431,39 @@ export default function Example() {
 				</section>
 			</main>
 		</div>
+	)
+}
+
+function Text1() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 150,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return <animated.h1 style={props}>Get in touch</animated.h1>
+}
+function Text2() {
+	const [flip, set] = useState(false)
+	const props = useSpring({
+		to: { opacity: 1 },
+		from: { opacity: 0 },
+		reset: false,
+		reverse: false,
+		delay: 400,
+		config: config.molasses,
+		onRest: () => set(!flip),
+	})
+
+	return (
+		<animated.h1 style={props}>
+			Have a question? Leave a message and a representative will get back to you
+			shortly.
+		</animated.h1>
 	)
 }
