@@ -46,11 +46,11 @@ const Footer = () => {
 							<h3 className='text-2xl pb-0 w-max  mb-4'>Contact Us</h3>
 							<span className='flex md:flex-row tracking-wider gap-1 pb-2 text-base text-center'>
 								<MdEmail size={20}></MdEmail>
-								<p>info@fixitcredit.com</p>
+								<p>carlos@fixitcredititinc.com</p>
 							</span>
 							<span className='flex md:flex-row gap-1 tracking-wider text-base text-start'>
 								<MdPhoneIphone size={20}></MdPhoneIphone>
-								<p>(xxx) xxx - 0000</p>
+								<p>(818) 422 - 7006</p>
 							</span>
 						</article>
 					</section>

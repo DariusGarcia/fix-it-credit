@@ -83,10 +83,7 @@ const Tips = () => {
 							<p className='mb-4'>
 								{' '}
 								Don't run your credit too often. Too many inquiries can have a
-								negative impact on your credit score. It's important that you
-								know what your credit score is, and what's on your report so
-								that you have a better idea of what your chances are of being
-								approved.
+								negative impact on your credit score.
 							</p>
 							<p>
 								It's important that you know what your credit score is, and

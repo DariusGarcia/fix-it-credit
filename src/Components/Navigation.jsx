@@ -21,14 +21,14 @@ export default function Navigation() {
 			<Popover as='header' className='sticky top-0 z-50 text-oswald'>
 				<div className='bg-warm-gray-50 lg:flex lg:justify-center border-b-2 border-warm-gray-300'>
 					<nav
-						className='sticky top-0 max-w-7xl mx-auto flex items-center justify-between py-6 md:py-12 px-6 xl:px-8'
+						className='sticky top-0 max-w-7xl mx-auto flex items-center justify-between py-6 px-6 xl:px-8'
 						aria-label='Global'>
 						<div className='flex items-center flex-1'>
 							<div className='flex items-center justify-between w-full lg:w-auto'>
 								<a href='#'>
 									<span className='sr-only'>Workflow</span>
 									<img
-										className='h-8 w-auto sm:h-10 rounded-md'
+										className='h-14 w-auto sm:h-24 rounded-md'
 										src={blackLogo}
 										alt=''
 									/>

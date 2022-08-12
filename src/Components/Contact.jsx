@@ -7,12 +7,7 @@ const offices = [
 	{
 		id: 1,
 		city: 'Los Angeles',
-		address: ['4556 Brendan Ferry', 'Los Angeles, CA 90210'],
-	},
-	{
-		id: 2,
-		city: 'New York',
-		address: ['886 Walter Streets', 'New York, NY 12345'],
+		address: ['6055 E Washington Blvd suite 260', 'Commerce, CA 90040'],
 	},
 ]
 
@@ -182,10 +177,10 @@ export default function Example() {
 									<h3 className='text-lg font-medium font-DMSans text-white'>
 										Contact information
 									</h3>
-									<p className='mt-6 text-base text-teal-50 max-w-3xl font-DMSans'>
+									{/* <p className='mt-6 text-base text-teal-50 max-w-3xl font-DMSans'>
 										Nullam risus blandit ac aliquam justo ipsum. Quam mauris
 										volutpat massa dictumst amet. Sapien tortor lacus arcu.
-									</p>
+									</p> */}
 									<dl className='mt-8 space-y-6 font-DMSans'>
 										<dt>
 											<span className='sr-only'>Phone number</span>
@@ -195,7 +190,7 @@ export default function Example() {
 												className='flex-shrink-0 w-6 h-6 text-teal-200'
 												aria-hidden='true'
 											/>
-											<span className='ml-3'>+1 (xxx) xxx-xxxx</span>
+											<span className='ml-3'>+1 (818) 422 - 7006</span>
 										</dd>
 										<dt>
 											<span className='sr-only'>Email</span>
@@ -205,7 +200,7 @@ export default function Example() {
 												className='flex-shrink-0 w-6 h-6 text-teal-200'
 												aria-hidden='true'
 											/>
-											<span className='ml-3'>support@fixitcreditit.com</span>
+											<span className='ml-3'>carlos@fixitcredititinc.com</span>
 										</dd>
 									</dl>
 								</div>
@@ -350,12 +345,10 @@ export default function Example() {
 						<h2
 							id='offices-heading'
 							className='text-3xl font-black font-oswald text-warm-gray-900'>
-							Our offices
+							Our office
 						</h2>
 						<p className='mt-6 text-lg text-warm-gray-500 max-w-3xl'>
-							Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate
-							id malesuada non. Cras aliquet purus dui laoreet diam sed lacus,
-							fames.
+							We are located in Southern California.
 						</p>
 						<div className='mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4'>
 							{offices.map((office) => (
